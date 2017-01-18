@@ -1,6 +1,6 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
-var targetUrl = 'http://localhost:3000'
+var targetUrl = 'http://myhr.avosapps.us'
 module.exports = {
   build: {
     env: require('./prod.env'),
@@ -22,7 +22,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api':{
+      '/api': {
         target: targetUrl,
         changeOrigin: true
       }

@@ -1,15 +1,3 @@
-'use strict'
-var AV = require('leanengine')
-
-AV.init({
-  appId: 'Vkryjkq2yGaPSS8qBFCIilOm-MdYXbMMI',
-  appKey: 'gY7Pb4R7DcT5d2fu2B03lMoM',
-  masterKey: 'dCrMK8PeD04oQBEziWufSB6G'
-})
-
-// 如果不希望使用 masterKey 权限，可以将下面一行删除
-AV.Cloud.useMasterKey()
-
 require('./check-versions')()
 var config = require('../config')
 if (!process.env.NODE_ENV) process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
